@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+         <!-- <class name="testCases.Tc001_RegistrationTest"/>-->
+             <class name="testCases.Baseclass"/> 
+          <!-- <class name="testCases.Tc002_LoginTest"></class>-->
+         <!-- <class name ="testCases.Tc003_LoginDDT"></class>-->
+     <!--  <class name = "testCases.Tc004_RegisterWithSameEmail"/> -->
+ <!--   <class name = "testCases.Tc005_validatePrivacyPolicy"/> -->
+    <!-- <class name = "testCases.Tc006_VerifyRegistrationWarningMsgs"/>-->
+  <!-- <class name = "testCases.Tc006_VerifyRegistrationWarningMsgs"/> -->
+ <!--  <class name = "testCases.Tc008_VerifyvalidemailpasswordsDDT"/> -->
+ <!--   <class name =  "testCases.Tc009_VerifyInvalidEmailAndValidPassword"/> -->
+    <!--  <class name="testCases.Tc010_NavigatingToOtherPages"></class> -->
+    <!--  <class name = "testCases.Tc011_ValidateLoginWithoutCredentials"/>-->
+   <!--  <class name = "testCases.Tc012_SearchProductWithExistingName"/> -->
+  <!--   <class name = "testCases.Tc013_SearchProductWithNonExistingName"/>-->
+   <!--  <class name = "testCases.Tc014_SearchWithNoProduct"/>-->
+   <!--   <class name ="testCases.Tc016_SelectDropDownProductsAfterLogin"/>--> 
+    <!--  <class name = "testCases.Tc017_AddingItemtoCart"/>-->
+   <!--<class name = "testCases.Tc018_ProductComparsionWithValidateProduct"/>-->
+  <!--   <class name = "testCases.Tc019_NavigatingToVariousDropDownsAndLinks"/>-->
+   <!-- <class name = "testCases.Tc020_Addtocartbtn"/> -->
+ 
+    </classes>
+  </test> 
+</suite> 
