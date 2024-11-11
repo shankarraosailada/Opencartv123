@@ -9,7 +9,7 @@ import pageObjects.MyAccountPage;
 
 public class Tc002_LoginTest extends Baseclass {
 
-	@Test
+	@Test(groups = {"Sanity","Master"})    //Master means all the test cases will come under master group
 	
 	public void verify_Login() {
 		

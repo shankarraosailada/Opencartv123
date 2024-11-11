@@ -8,7 +8,8 @@ import pageObjects.HomePage;
 
 public class Tc001_RegistrationTest extends Baseclass {
 	
-	@Test
+	//@Test(groups= {"Regression","Master"})
+	@Test()
 	
 	public void verify_Account_Registration() {
 		

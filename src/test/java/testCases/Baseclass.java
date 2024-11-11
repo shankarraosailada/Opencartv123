@@ -20,9 +20,9 @@ import org.testng.annotations.Parameters;
 
 public class Baseclass {
 
- WebDriver driver;
- Properties p;
- Properties testdata;
+ public static WebDriver driver;
+ public Properties p;
+ public Properties testdata;
   
         /*  @BeforeClass
           public void setup() throws IOException
@@ -32,9 +32,12 @@ public class Baseclass {
           driver.get("https://tutorialsninja.com/demo/");
           }*/
   
-	@BeforeClass
-	@Parameters({"browser"})
-	void setup(String br) throws IOException {
+ // here the groups sanity,regression and master should also need this before and after class to execute so add the 
+ //groups tag in BeforeClass and AfterClass also.
+	//@BeforeClass(groups= {"Sanity","Master","Regression"})
+    @BeforeClass()
+	@Parameters({"os","browser"})
+	void setup(String os,String br ) throws IOException {
 	      
 		switch(br.toLowerCase())
 		{
@@ -64,7 +67,8 @@ public class Baseclass {
 		
 	}
 	
-	@AfterClass
+	//@AfterClass(groups= {"Sanity","Regression","Master"})
+    @AfterClass()
 	void tearDown() {
 		driver.quit();
 	}
